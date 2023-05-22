@@ -140,7 +140,7 @@ async function getRecipes() {
  * @param {Array<Object>} recipes An array of recipes
  */
 function saveRecipesToStorage(recipes) {
-  localStorage.setItem('recipes', JSON.stringify(recipes));
+  localStorage.setItem('recipes7', JSON.stringify(recipes));
 }
 
 /**
