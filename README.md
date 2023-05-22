@@ -1,1 +1,4 @@
-# Lab 7 - Starter
+
+Team Members: Leon Tan
+
+- [Live Page](./index.html)
