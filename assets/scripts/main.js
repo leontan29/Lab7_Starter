@@ -56,12 +56,6 @@ function initializeServiceWorker() {
   // STEPS B6 ONWARDS WILL BE IN /sw.js
 }
 
-async function asyncForEach(array, callback) {
-    for (let idx = 0; idx < array.length; idx++) {
-	await callback(array[idx], idx, array);
-    }
-}
-
 /**
  * Reads 'recipes' from localStorage and returns an array of
  * all of the recipes found (parsed, not in string form). If
@@ -100,7 +94,8 @@ async function getRecipes() {
 	/**************************/
 	// A4. Loop through each recipe in the RECIPE_URLS array constant
 	//     declared above
-	asyncForEach(RECIPE_URLS, async (url) => {
+	//asyncForEach(RECIPE_URLS, async (url) => {
+	RECIPE_URLS.map(async (url) => {
 	    console.log(url);
 	    // A5. Since we are going to be dealing with asynchronous code, create
 	    //     a try / catch block. A6-A9 will be in the try portion, A10-A11
