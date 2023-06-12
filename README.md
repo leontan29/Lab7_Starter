@@ -1,4 +1,4 @@
 
 Team Members: Leon Tan
 
-- [Live Page](./index.html)
+- [Live Page](https://leontan29.github.io/Lab7_Starter/)
